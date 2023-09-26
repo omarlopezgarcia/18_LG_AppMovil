@@ -19,12 +19,15 @@ class BasicIntro extends StatelessWidget {
                     fontSize: 40,
                     color: Color.fromRGBO(22, 53, 156, 1),
                     fontWeight: FontWeight.bold)),
-            const Text('Perfeccionamos tu talento',
-                style: TextStyle(
-                    fontSize: 20,
-                    color: Color.fromRGBO(243, 114, 35, 1),
-                    fontWeight: FontWeight.bold,
-                    fontStyle: FontStyle.italic)),
+            const Padding(
+              padding: EdgeInsets.only(bottom: 100),
+              child: Text('Perfeccionamos tu talento',
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: Color.fromRGBO(243, 114, 35, 1),
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic)),
+            ),
             MaterialButton(
               onPressed: () {
                 Navigator.push(
@@ -36,7 +39,7 @@ class BasicIntro extends StatelessWidget {
               textColor: Colors.white,
               padding: const EdgeInsets.all(20),
               shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(20))),
+                  borderRadius: BorderRadius.all(Radius.circular(10))),
               child: const Text('Empieza ahora...'),
             )
           ],
